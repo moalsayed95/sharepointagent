@@ -1,0 +1,22 @@
+{
+  "knowledge_sources": [
+    {
+      "name": "employee-onboarding-ks",
+      "description": "Employee onboarding documentation from SharePoint",
+      "sharepoint_site": "${SHAREPOINT_SITE_URL}",
+      "container": "defaultSiteLibrary",
+      "enabled": true
+    }
+  ],
+  "default_config": {
+    "embedding_model": "${EMBEDDING_DEPLOYMENT_NAME}",
+    "embedding_dimensions": 3072,
+    "vector_algorithm": "hnsw",
+    "hnsw_parameters": {
+      "metric": "cosine",
+      "m": 4,
+      "efConstruction": 400,
+      "efSearch": 500
+    }
+  }
+}

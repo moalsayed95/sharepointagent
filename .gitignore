@@ -1,0 +1,49 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+env/
+
+# Environment and secrets - CRITICAL: NEVER COMMIT THESE
+.env
+.env.*
+*.env
+.env.local
+.env.production
+.env.development
+!.env.example
+credentials.json
+secrets.json
+*.key
+*.pem
+*.pfx
+
+# Azure/Config files that might contain secrets
+*.publishsettings
+*.cer
+*.p12
+.azure/
+
+# Temporary files
+tmpclaude-*
+nul
+*.tmp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
