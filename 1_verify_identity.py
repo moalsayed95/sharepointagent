@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
+# Import MSAL for authentication (Microsoft Authentication Library)
 from msal import ConfidentialClientApplication
 
-# Load environment variables
 load_dotenv()
 
 def check_identity():
@@ -10,7 +10,7 @@ def check_identity():
 
     # Credentials from .env
     app = ConfidentialClientApplication(
-        os.getenv("SHAREPOINT_APP_ID"),
+        client_id=os.getenv("SHAREPOINT_APP_ID"),
         client_credential=os.getenv("SHAREPOINT_APP_SECRET"),
         authority=f"https://login.microsoftonline.com/{os.getenv('AZURE_TENANT_ID')}"
     )
