@@ -47,3 +47,7 @@ nul
 # OS files
 .DS_Store
 Thumbs.db
+
+# Test data (PDFs with sensitive content)
+pdf-data/
+multimodal-rag/data/
