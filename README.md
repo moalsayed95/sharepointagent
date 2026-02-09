@@ -23,7 +23,31 @@ A production-ready implementation of Agentic RAG using Azure AI Services, ShareP
 └─────────────────────┘     - Agentic Decision Making
 ```
 
-## 🚀 Project Phases
+## � Installation
+
+This project uses [UV](https://docs.astral.sh/uv/) for dependency management with a lock file for reproducible builds.
+
+```bash
+# Clone the repo
+git clone <repo-url>
+cd sharepointtest
+
+# Install dependencies (uses uv.lock for exact versions)
+uv sync
+
+# Run any script
+uv run python <script>.py
+```
+
+> **Important:** Always use `uv sync` (not `uv pip install`) to ensure everyone gets the exact same package versions from `uv.lock`.
+
+| Command | Purpose |
+|---------|---------|
+| `uv sync` | Install exact versions from lock file (reproducible) |
+| `uv lock` | Regenerate lock file after editing pyproject.toml |
+| `uv lock --upgrade` | Upgrade all dependencies to latest compatible versions |
+
+## �🚀 Project Phases
 
 ### Phase 1: Identity & Security ✅
 **File:** `verify_identity.py`
